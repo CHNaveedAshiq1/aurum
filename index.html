@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AURUM, Premium Chronos</title>
+<meta name="description" content="AURUM premium chronographs and dress watches in 18k gold. Black dials, hand finished cases, the Premium Collection.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-head" id="siteHead">
+  <a class="logo" href="#top" aria-label="Aurum home">
+    <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l9 13-9 13L7 16z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="3.2" fill="currentColor"/></svg>
+    <span>AURUM</span>
+  </a>
+  <nav class="main-nav" aria-label="Main">
+    <a href="#collection">Collection</a>
+    <a href="#heritage">Heritage</a>
+    <a href="#craft">Craft</a>
+    <a href="#viewing">Private Viewing</a>
+  </nav>
+  <button class="bag-btn" id="bagBtn" type="button" aria-haspopup="dialog">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12.2a1.5 1.5 0 0 1-1.5 1.3H7.7a1.5 1.5 0 0 1-1.5-1.3L5 8zm3.5 0V6.5a3.5 3.5 0 0 1 7 0V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    BAG (<span id="bagCount">0</span>)
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <p class="hero-word" aria-hidden="true">AURUM</p>
+
+    <div class="hero-copy">
+      <p class="hero-kicker reveal">HAUTE HORLOGERIE · EST. 1962</p>
+      <h1 class="hero-title" aria-label="Premium Chronos">
+        <span class="w">PREMIUM</span> <span class="w gold">CHRONOS</span>
+      </h1>
+      <p class="hero-sub reveal">Black dials, solid gold cases and movements finished entirely by hand. Timepieces made slowly, for people who notice.</p>
+      <div class="hero-cta reveal">
+        <a class="btn btn-gold" href="#collection">EXPLORE THE COLLECTION</a>
+        <a class="btn btn-ghost" href="#viewing">BOOK A VIEWING</a>
+      </div>
+      <div class="hero-piece reveal">
+        <div>
+          <p class="piece-name">The Aurum No. 1</p>
+          <p class="piece-meta">REF. AUR-00 · 18K GOLD · ALLIGATOR</p>
+        </div>
+        <p class="piece-price">$14,500</p>
+        <button class="btn btn-add" type="button" data-add="p0">ADD TO BAG</button>
+        <button class="btn btn-detail" type="button" data-detail="p0">VIEW DETAILS</button>
+      </div>
+    </div>
+
+    <div class="hero-watch" id="heroWatch">
+      <div class="watch-stage" id="watchStage">
+        <svg class="ring-text" viewBox="0 0 300 300" aria-hidden="true">
+          <defs><path id="ringPath" d="M150,150 m-128,0 a128,128 0 1,1 256,0 a128,128 0 1,1 -256,0"/></defs>
+          <text><textPath href="#ringPath">AURUM · PREMIUM CHRONOS · HAND FINISHED · EST. 1962 · </textPath></text>
+        </svg>
+        <div class="watch-frame">
+          <img src="img/hero-watch.jpg" alt="Aurum No. 1 wristwatch with a black dial, gold case and black alligator strap" fetchpriority="high">
+          <div class="watch-shine" aria-hidden="true"></div>
+        </div>
+        <div class="watch-shadow" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <a class="scroll-hint" href="#collection" aria-label="Scroll to the collection">
+      <span>THE COLLECTION</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v14m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>HAND FINISHED IN GENEVA</span><i>◆</i><span>CALIBRE A-1962</span><i>◆</i><span>18K SOLID GOLD</span><i>◆</i><span>FIVE YEAR WARRANTY</span><i>◆</i><span>FREE INSURED DELIVERY</span><i>◆</i>
+      <span>HAND FINISHED IN GENEVA</span><i>◆</i><span>CALIBRE A-1962</span><i>◆</i><span>18K SOLID GOLD</span><i>◆</i><span>FIVE YEAR WARRANTY</span><i>◆</i><span>FREE INSURED DELIVERY</span><i>◆</i>
+    </div>
+  </div>
+
+  <!-- COLLECTION -->
+  <section class="collection" id="collection">
+    <div class="section-head">
+      <p class="kicker">FIVE PIECES · ONE STANDARD</p>
+      <h2 class="rise-title">Premium Collection</h2>
+      <p class="section-sub">Every watch in the collection carries the same in-house calibre, the same hand polished case, and the same black or cream dial language.</p>
+    </div>
+    <div class="grid" id="watchGrid"></div>
+  </section>
+
+  <!-- HERITAGE -->
+  <section class="heritage" id="heritage">
+    <div class="heritage-copy">
+      <p class="kicker">SINCE 1962</p>
+      <h2 class="rise-title">Time, kept the slow way.</h2>
+      <p>Three generations of watchmakers have sat at the same benches. We still cut, polish and regulate every calibre by hand, and we still believe a watch should be quiet about its quality.</p>
+      <p>The clock on this page is not a picture. It is running on your own time, second by second, the way every Aurum movement runs: steadily, and without hurry.</p>
+      <div class="stats">
+        <button class="stat" type="button" data-stat="years" aria-expanded="false"><strong data-count="64">0</strong><span>Years at the bench</span><small class="stat-hint">Tap for the breakdown</small></button>
+        <button class="stat" type="button" data-stat="parts" aria-expanded="false"><strong data-count="214">0</strong><span>Parts in every calibre</span><small class="stat-hint">Tap for the breakdown</small></button>
+        <button class="stat" type="button" data-stat="hours" aria-expanded="false"><strong data-count="72">0</strong><span>Hours of power reserve</span><small class="stat-hint">Tap for the breakdown</small></button>
+      </div>
+      <div class="stat-detail" id="statDetail" hidden>
+        <h3 id="statDetailTitle"></h3>
+        <div id="statDetailRows"></div>
+        <div class="sd-row sd-total"><span id="statDetailTotalLabel"></span><strong id="statDetailTotal"></strong></div>
+        <p class="sd-note" id="statDetailNote"></p>
+      </div>
+    </div>
+
+    <figure class="live-clock">
+      <svg id="clockSvg" viewBox="0 0 320 320" role="img" aria-label="A live clock showing your current time">
+        <circle class="clock-ring" cx="160" cy="160" r="152"/>
+        <circle class="clock-face" cx="160" cy="160" r="140"/>
+        <g id="clockMarkers"></g>
+        <text class="clock-brand" x="160" y="118" text-anchor="middle">AURUM</text>
+        <text class="clock-sub" x="160" y="216" text-anchor="middle">CALIBRE A-1962</text>
+        <g id="hourHand" class="hand hour"><path d="M160 160 L160 84"/></g>
+        <g id="minHand" class="hand minute"><path d="M160 160 L160 52"/></g>
+        <g id="secHand" class="hand second"><path d="M160 182 L160 44"/></g>
+        <circle class="clock-pin" cx="160" cy="160" r="6"/>
+      </svg>
+      <figcaption>
+        <span id="digitalTime">00:00:00</span>
+        <span class="clock-note">YOUR TIME, LIVE</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- CRAFT -->
+  <section class="craft" id="craft">
+    <div class="section-head">
+      <p class="kicker">INSIDE EVERY AURUM</p>
+      <h2 class="rise-title">Built by hand, checked by eye</h2>
+    </div>
+    <div class="craft-row">
+      <article class="craft-card">
+        <p class="craft-num">01</p>
+        <h3>The Calibre</h3>
+        <p>Our in-house A-1962 movement holds 214 parts and a 72 hour reserve. Each one is regulated in five positions before it ever meets a case.</p>
+      </article>
+      <article class="craft-card">
+        <p class="craft-num">02</p>
+        <h3>The Case</h3>
+        <p>Solid 18k gold, milled from a single billet and polished by one pair of hands from first cut to final shine. No two polishes are ever identical.</p>
+      </article>
+      <article class="craft-card">
+        <p class="craft-num">03</p>
+        <h3>The Finish</h3>
+        <p>Gold markers are applied by hand under magnification, the dial is lacquered in nine coats, and a sapphire crystal seals it all against the world.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRIVATE VIEWING -->
+  <section class="viewing" id="viewing">
+    <div class="viewing-inner">
+      <p class="kicker">BY APPOINTMENT</p>
+      <h2 class="rise-title">Book a private viewing</h2>
+      <p class="section-sub">Tell us where to write, and our concierge will arrange a private viewing of any piece in the collection, in person or by video call.</p>
+      <form id="viewingForm" novalidate>
+        <label class="field">
+          <span>Full Name</span>
+          <input id="vName" type="text" autocomplete="name" placeholder="e.g. Daniel Mercer">
+          <small class="error" id="eVName"></small>
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input id="vEmail" type="email" autocomplete="email" placeholder="you@example.com">
+          <small class="error" id="eVEmail"></small>
+        </label>
+        <label class="field">
+          <span>Piece of Interest</span>
+          <select id="vWatch">
+            <option value="The Aurum No. 1">The Aurum No. 1</option>
+            <option value="Sovereign Roman">Sovereign Roman</option>
+            <option value="Meridian Subdial">Meridian Subdial</option>
+            <option value="Nocturne Open Heart">Nocturne Open Heart</option>
+            <option value="Regent Cream">Regent Cream</option>
+            <option value="Eclipse Moonphase">Eclipse Moonphase</option>
+          </select>
+        </label>
+        <button class="btn btn-gold wide big" type="submit">REQUEST MY VIEWING</button>
+        <p class="ok-note" id="viewingOk" hidden>Thank you. Your request is with our concierge, who will write to you within one working day.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <p class="foot-logo">AURUM</p>
+  <p>Premium chronos in 18k gold, finished by hand since 1962.</p>
+  <p class="foot-line">Free insured delivery worldwide · Five year warranty · 30 day returns</p>
+  <p class="foot-small">Demonstration boutique. No real orders are taken on this page.</p>
+</footer>
+
+<!-- BAG PANEL -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="bag-panel" id="bagPanel" aria-hidden="true" aria-label="Your bag">
+  <button class="panel-close" id="bagClose" type="button" aria-label="Close bag">×</button>
+  <h2>Your Selection</h2>
+  <div class="bag-list" id="bagList"></div>
+  <p class="bag-empty" id="bagEmpty">Your bag is empty. Add a piece from the collection and it will wait for you here.</p>
+  <div class="total-row">
+    <span>Total (<span id="totalItems">0</span> items)</span>
+    <strong id="totalPrice">$0</strong>
+  </div>
+  <button class="btn btn-gold wide big" id="enquireBtn" type="button">ENQUIRE ABOUT YOUR SELECTION</button>
+  <p class="ok-note" id="bagOk" hidden>Received. Our concierge will write to you about your selection within one working day.</p>
+</aside>
+
+<!-- DETAIL SHEET -->
+<div class="detail-scrim" id="detailScrim" hidden></div>
+<aside class="detail-sheet" id="detailSheet" aria-hidden="true" aria-label="Watch details" role="dialog">
+  <button class="panel-close" id="detailClose" type="button" aria-label="Close details">×</button>
+  <div class="detail-grid">
+    <div class="detail-media"><img id="detailImg" src="img/hero-watch.jpg" alt=""></div>
+    <div class="detail-body">
+      <p class="card-ref" id="detailRef"></p>
+      <h2 id="detailName"></h2>
+      <p class="detail-code" id="detailCode"></p>
+      <p class="detail-price" id="detailPrice"></p>
+      <h3 class="detail-h">The story</h3>
+      <p class="detail-p" id="detailStory"></p>
+      <h3 class="detail-h">What is inside</h3>
+      <p class="detail-p" id="detailInside"></p>
+      <h3 class="detail-h">How it is made</h3>
+      <ol class="detail-steps" id="detailMade"></ol>
+      <h3 class="detail-h">Data points</h3>
+      <dl class="detail-data" id="detailData"></dl>
+      <h3 class="detail-h">Strap or bracelet, same price</h3>
+      <div class="strap-row" id="detailStraps"></div>
+      <p class="detail-note">Your strap choice is included at the price shown. No extra charge, fitted before delivery.</p>
+      <button class="btn btn-gold wide big" id="detailAdd" type="button">ADD TO BAG</button>
+    </div>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
